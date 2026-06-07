@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/mcp_server/:splat"
+  status = 200
+
+[build]
+  command = "pip install -r requirements.txt"
+  functions = "netlify/functions"
