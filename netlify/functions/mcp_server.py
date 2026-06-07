@@ -1,13 +1,17 @@
 import os
 import sys
+
+# Add the parent directory to sys.path so imports work correctly
+sys.path.append(os.path.join(os.path.dirname(__file__), '../../'))
+
 from mcp.server.fastmcp import FastMCP
 from mcp.server.sse import SseServerTransport
 from starlette.applications import Starlette
 from starlette.requests import Request
 from mangum import Mangum
 
-# Import existing logic from your existing scripts
-# We'll assume basecamp_fastmcp.py exports 'mcp'
+# Import existing logic from basecamp_fastmcp.py
+# We import mcp directly
 from basecamp_fastmcp import mcp
 
 sse = SseServerTransport("/.netlify/functions/mcp_server/messages")

@@ -6,3 +6,7 @@
 [build]
   command = "pip install -r requirements.txt"
   functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+  included_files = ["*.py", "token_storage.py", "auth_manager.py", "basecamp_client.py", "search_utils.py", "basecamp_fastmcp.py"]
