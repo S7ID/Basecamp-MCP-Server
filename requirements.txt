@@ -1,8 +1,1 @@
-requests==2.31.0
-python-dotenv==1.0.0
-flask==2.3.3
-flask-cors==4.0.0
-pytest==7.4.0
-mcp[cli]>=1.2.0
-httpx>=0.25.0
-anyio>=4.0.0
+cmVxdWVzdHM9PTIuMzEuMApweXRob24tZG90ZW52PT0xLjAuMApmbGFzaz09Mi4zLjMKZmxhc2stY29ycz09NC4wLjAKcHl0ZXN0PT03LjQuMAptY3BbY2xpXT49MS4yLjAKaHR0cHg+PTAuMjUuMAphbnlpbz49NC4wLjAKZmFzdGFwaQp1dmljb3JuCnN0YXJsZXR0ZQptY3Bbc3NlXT49MS4yLjAK
